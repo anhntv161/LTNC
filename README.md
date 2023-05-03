@@ -12,7 +12,8 @@
 - Thư viện: SDL2-2.26.3, SDL2_image-2.6.3, SDL2_ttf-2.20.2, SDL2_mixer-2.6.3
 # Play
 - PLAY: bắt đầu chơi game
-- Phím mũi tên phải : di chuyển block sang phải
-- Phím mũi tên trái : đi chuyển block sang trái
-- Phím mũi tên dưới : xoay block / ấn giữ để block rơi nhanh hơn
+- Mũi tên phải : di chuyển block sang phải
+- Mũi tên trái : đi chuyển block sang trái
+- Mũi tên lên : xoay block
+- Mũi tên xuống : ấn giữ để block rơi nhanh hơn
 - SPACE : dừng game tam thời cho đến khi ấn lại
