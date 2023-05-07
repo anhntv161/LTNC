@@ -51,9 +51,9 @@ public:
     void endgame();
     void updateRender();
     void clean();
-    bool getreplay()
+    bool getisWait()
     {
-        return isreplay;
+        return iswait;
     }
 
 private:
@@ -83,7 +83,7 @@ private:
     int move = 0;
     int score = 0;
     bool ispaused = false;
-    bool isreplay = true;
+    bool iswait = true;
     bool rotate = false;
     unsigned int delay = 300;
     Uint32 startTime = 0, currentTime = 0;

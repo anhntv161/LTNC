@@ -113,7 +113,6 @@ void Tetris::handleEvennts()
             {
             case SDL_QUIT:
                 running = false;
-                isreplay = false;
                 break;
             case SDL_MOUSEBUTTONDOWN:
                 SDL_GetMouseState(&xpos, &ypos);
@@ -155,7 +154,7 @@ void Tetris::handleEvennts()
     }
     const Uint8* state = SDL_GetKeyboardState(NULL);
     if(state[SDL_SCANCODE_DOWN])
-        delay = 50;
+        delay = 20;
 }
 
 void Tetris::setPosRect(SDL_Rect& rect, int x, int y, int w, int h)
@@ -253,7 +252,7 @@ void Tetris::gameplay()
     move = 0;
     rotate = false;
 
-    delay = 600;
+    delay = 500;
 }
 
 void Tetris::gameOver()

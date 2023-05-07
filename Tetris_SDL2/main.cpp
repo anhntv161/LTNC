@@ -7,7 +7,7 @@ int main(int argc, char* argv[]){
     Tetris* tetris = new Tetris();
     const char* title = "Tetris";
     tetris->init(title);
-    while(tetris->getreplay())
+    while(tetris->getisWait())
     {
         while (tetris->isrunning())
         {
@@ -25,6 +25,15 @@ int main(int argc, char* argv[]){
             tetris->gameOver();
         }
         tetris->endgame();
+        SDL_Event e;
+        if(SDL_PollEvent(&e))
+        {
+            if(e.type == SDL_QUIT)
+            {
+                break;
+            }
+
+        }
     }
     tetris->clean();
     return 0;
